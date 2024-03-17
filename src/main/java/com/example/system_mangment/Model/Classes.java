@@ -11,12 +11,12 @@ public class Classes {
     @Size(min = 3,max = 10,message = "name minmum 3 maximum 10")
     private String name;
     @Positive(message = "level must be greater then 0")
-    //    @NotEmpty not working on my computer
+       @NotEmpty 
     @Max(value = 8,message = "maximum level is 8")
-    private int level;
+    private Integer level;
     @Positive(message = "houts must be greater then 0")
-    //    @NotEmpty not working on my computer
+      @NotEmpty
     @Min(value = 1,message = "minmum hours is 1 ")
     @Max(value = 2,message = "maximum hours is 2")
-    private int hours;
+    private Integer hours;
 }
