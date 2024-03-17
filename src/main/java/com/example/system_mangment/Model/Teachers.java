@@ -10,7 +10,7 @@ public class Teachers {
 //    @NotEmpty not working on my computer
 @Min(value = 10000000, message = "id should be exactly 8 digits")
 @Max(value = 99999999, message = "id should be exactly 8 digits")
-    private int id;
+    private  Integer id;
     @NotNull(message = "name should't be empty")
     @Size(min = 3 , max = 10,message = "name min shoud be 3 and max 10 ")
     private String name;
@@ -19,7 +19,7 @@ public class Teachers {
     private String catogary;
 //    @NotEmpty not working on my computer
     @Min(value = 3000 ,message = "main salary is 3000")
-    private int salary;
+    private  Integer salary;
     @AssertFalse(message = " onLeave shoud be false")
     boolean onLeave;
 
